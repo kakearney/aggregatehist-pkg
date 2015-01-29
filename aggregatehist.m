@@ -60,7 +60,7 @@ Opt = parsepv(Opt, varargin);
 sz = reshape(sz, 1, []); % Needs to be row vector
 
 if any(bin == 0)
-    warning('Some data outside bin edges or NaN');
+    warning('aggregatehist:outside', 'Some data outside bin edges or NaN');
 end
 
 % Aggregate x and y data
